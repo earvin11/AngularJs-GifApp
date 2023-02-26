@@ -1,0 +1,11 @@
+<h5>Buscar:</h5>
+
+<!-- cuando se haga enter en este input (keyup.enter) ejecuta el metodo search,
+#txtSearch una referencia del element -->
+<input 
+    type="text" 
+    class="form-control" 
+    placeholder="Buscar gifs..."
+    (keyup.enter)="search()"
+    #txtSearch
+>

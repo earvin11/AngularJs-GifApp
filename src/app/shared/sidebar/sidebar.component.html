@@ -9,11 +9,12 @@
     <!-- el pipe titlecase capitaliza el termino a mostrar -->
     <div class="list-group list-reset">
         <a 
-            *ngFor="let search of history"
-            href="#" 
+            *ngFor="let item of history"
+            (click)="search( item )" 
+            href="#"
             class="list-group-item list-group-item-action" 
         >
-        {{ search | titlecase }}
+        {{ item | titlecase }}
         </a>
     </div>
 
